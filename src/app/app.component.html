@@ -14,7 +14,7 @@
       <div class="container">
         <p class="result">13</p>
       </div>
-    </div>    
+    </div>
 
     <div class="question">
       <strong>2)</strong> Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a
@@ -25,6 +25,15 @@
       <strong>IMPORTANTE:</strong> Esse número pode ser informado através de qualquer entrada de sua preferência ou pode
       ser
       previamente definido no código;<br>
+
+      <div class="container">
+        <form>
+          <input type="number" placeholder="Digite um número" [(ngModel)]="numero" name="numeroInput" />
+          <button type="button" (click)="verificarFibonacci()">Verificar</button>
+        </form>
+
+        <p class="result">{{ mensagem }}</p>
+      </div>
     </div>
 
     <div class="question">
@@ -39,6 +48,12 @@
       <strong>b)</strong> Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser
       ignorados no
       cálculo da média;<br>
+      <div class="container">
+        <button type="button" (click)="calcularFaturamento()">Calcular Faturamento</button>
+        <p class="result"><strong>Menor faturamento:</strong> R$ {{ menorFaturamento.toFixed(2) }}</p>
+        <p class="result"><strong>Maior faturamento:</strong> R$ {{ maiorFaturamento.toFixed(2) }}</p>
+        <p class="result"><strong>Dias acima da média:</strong> {{ diasAcimaMedia }}</p>
+      </div>
     </div>
 
     <div class="question">
