@@ -1,0 +1,72 @@
+:host {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: inherit;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  max-width: 700px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: var(--gray-900);
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0;
+}
+
+div.question {
+  font-size: 14px;
+  color: var(--gray-700);
+  margin: 1.5rem 0;
+}
+
+div.code {
+  font-size: 12px;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+}
+
+div.container {
+  width: auto;
+  background-color: #b6d5bc;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+
+  p.result {
+    font-size: 13px;
+  }
+}
+
+form {}
+
+form input {
+  padding: 0.5rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+}
+
+form button {
+  padding: 0.5rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.25rem;
+}
