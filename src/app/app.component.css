@@ -73,3 +73,9 @@ button {
   border-radius: 0.25rem;
   cursor: pointer;
 }
+
+.footer {
+  font-size: 12px;
+  color: var(--gray-700);
+  margin: 1rem 0;
+}
